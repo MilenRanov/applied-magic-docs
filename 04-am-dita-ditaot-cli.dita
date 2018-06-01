@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--  This file is a sample for the Applied Magic - CI with DITA workshop, ETC 2018.  -->
+
+<task id="dita-ot-cli" xml:lang="en-us">
+  <title>Install and Run DITA-OT</title>
+  <shortdesc>What we're going to do: Install and run DITA-OT using the Windows CLI on the local machine, build a pdf file using the DITA-OT sample topics.</shortdesc>
+    <taskbody>
+    <steps>
+      <step>
+        <cmd>Download the DITA-OT distribution package from https://www.dita-ot.org/download and unpack the zip file.</cmd>
+      </step>
+	  <step>
+        <cmd>Navigate to Control Panel > System Advanced System Settings > Environment Variables and add the full path to the bin folder of the DITA-OT installation to the Path system variable.</cmd>
+      </step>
+      <step>
+        <cmd>Open a command window and navigate to the DITA-OT bin folder.</cmd>
+<info>Like this: <pre>cd C:\dita-ot-3.0.4\bin>dita --input=C:\dita-ot-3.0.4\docsrc\samples\taskbook.ditamap --format=pdf</pre></info>	
+      </step>
+	  <step>
+        <cmd>In the DITA-OT bin folder, run the dita command and supply the path to the sample source files and output format.</cmd>
+<info>Like this: <pre>dita --input=C:\dita-ot-3.0.4\docsrc\samples\taskbook.ditamap --format=pdf</pre></info>	
+      </step>
+	  <step>
+	  <cmd>Check the generated pdf file in C:\dita-ot-3.0.4\bin\out to verify output.</cmd>
+	  </step>
+    </steps>
+  </taskbody>
+</task>

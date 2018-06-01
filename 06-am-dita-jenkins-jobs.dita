@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--  This file is a sample for the Applied Magic - CI with DITA workshop, ETC 2018.  -->
+
+<task id="dita-ot-jenkins-job" xml:lang="en-us">
+  <title>Create a Jenkins Job</title>
+  <shortdesc>What we're going to do: Create and configure a Jenkins job that runs the dita command.</shortdesc>
+    <taskbody>
+    <steps>
+      <step>
+        <cmd>On the Jenkins dashboard, click New Item, enter the name of your project, select Freestyle project, and click OK.</cmd>
+      </step>
+	  <step>
+        <cmd>On the General tab of your new Jenkins job, enter the project name.</cmd>
+      </step>
+	  <step>
+        <cmd>On the Build tab, click Add build step and select Execute Windows Batch command.</cmd>
+      </step>
+       <step>
+        <cmd>Paste the same dita command you used in the Windows CLI, and save the job configuration.</cmd>
+		<info>See, same: <pre>dita --input=C:\dita-ot-3.0.4\docsrc\samples\taskbook.ditamap --format=pdf</pre></info>
+		<stepresult>This time, your out folder and pdf file will be generated in the Jenkins workspace.</stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

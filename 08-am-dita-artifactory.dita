@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--  This file is a sample for the Applied Magic - CI with DITA workshop, ETC 2018.  -->
+
+<task id="dita-ot-artifactory" xml:lang="en-us">
+  <title>Install and Connect Artifactory</title>
+  <shortdesc>What we're going to do: Install Artifactory, create a repository and connect Jenkins.</shortdesc>
+    <taskbody>
+    <steps>
+      <step>
+        <cmd>Download the open source version of Artifactory from https://jfrog.com/open-source/ and unpack the zip file.</cmd>
+      </step>
+	  <step>
+        <cmd>Right-click and run the artofactory.bat as administrator.</cmd>
+      </step>
+	  <step>
+        <cmd>When Artifactory installs, open a browser and navigate to localhost:8081.</cmd>
+      </step>
+      <step>
+        <cmd>On the Welcome wizard, configure password, skip the proxy settings, and create a new generic repository.</cmd>		
+      </step>
+	  <step>
+        <cmd>Go to Jenkins > Manage Jenkins > Configure System and add the Artifactory URL and credentials in the Artifactory section.</cmd><info><note type="tip">Jenkins might require restart to pick up the configuration, use localhost:8080/safeRestart.</note></info>
+      </step>
+    </steps>
+  </taskbody>
+</task>

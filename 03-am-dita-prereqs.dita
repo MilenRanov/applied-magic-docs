@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--  This file is a sample for the Applied Magic - CI with DITA workshop, ETC 2018.  -->
+
+<concept id="am-dita-03" xml:lang="en-us">
+  <title>Prerequisites</title>
+  <shortdesc>Setup your system</shortdesc>
+  <conbody><p>Before you begin, do/verify the following:</p>
+    <p><ul>
+    <li>Install JRE/JDK 1.8: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</li>
+	<li>Configure JAVA_HOME in your system environment variables</li>
+    <li>Install Git Runtime: https://git-scm.com/download/win<note type="tip">When installing the git runtime, select "Use Git from the Windows Command Prompt".</note></li>	
+    <li>Add Git to your system path environment variable</li>
+	<li>Fork the DITA-OT docs repo, and github repo for the workshop: https://github.com/dita-ot/docs and https://github.com/irruka/applied-magic</li>
+	<li>Keep calm and have fun :)</li>
+	</ul>
+ </p>
+  </conbody>
+</concept>

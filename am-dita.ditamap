@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<!--  This file is a sample for the Applied Magic - CI with DITA workshop, ETC 2018.  -->
+
+<bookmap xml:lang="en-US">
+  <title>Applied Magic</title>
+  <bookmeta>
+    <prodinfo>
+      <prodname>Applied Magic Doc CI</prodname>
+      <vrmlist>
+        <vrm version="1.0"/>
+      </vrmlist>
+    </prodinfo>
+  </bookmeta>
+  <frontmatter>
+    <booklists>
+      <toc/>
+    </booklists>
+  </frontmatter>
+		<topicref href="01-am-dita-intro.dita" type="concept" />
+		<topicref href="02-am-dita-overview.dita" type="concept" />
+		<topicref href="03-am-dita-prereqs.dita" type="concept" />
+		<topicref href="05-am-dita-jenkins.dita" type="task" />
+		<topicref href="06-am-dita-jenkins-jobs.dita" type="task" />
+		<topicref href="07-am-dita-jenkins-github.dita" type="task" />
+		<topicref href="08-am-dita-artifactory.dita" type="task" />
+		<topicref href="09-am-dita-jenkins-artifactory.dita" type="task" />
+  </bookmap>

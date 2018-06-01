@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--  This file is a sample for the Applied Magic - CI with DITA workshop, ETC 2018.  -->
+
+<task id="dita-ot-jenkins-github" xml:lang="en-us">
+  <title>Now lets pull our source from GitHub!</title>
+  <shortdesc>What we're going to do: You can reate a new Jenkins Job, or modify the one you already have and configure it to pull the source from GitHub.</shortdesc>
+    <taskbody>
+    <steps>
+      <step>
+        <cmd>On the Source Code Management tab of the job, select Git.</cmd>
+      </step>
+	  <step>
+        <cmd>Paste the URL to your fork of the doc/demo repo, like this:</cmd>
+      </step>
+	  <step>
+        <cmd>Make sure that Branches to build contains */master.</cmd>
+      </step>
+       <step>
+        <cmd>Modify the dita command you used in the Windows CLI and Jenkins job, and save the job configuration.</cmd>
+		<info>See, same: <pre>dita --input=samples\taskbook.ditamap --format=pdf</pre></info>
+		<stepresult>Your out folder and pdf file will be generated in the Jenkins workspace.</stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

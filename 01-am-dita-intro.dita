@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--  This file is a sample for the Applied Magic - CI with DITA workshop, ETC 2018.  -->
+
+<concept id="am-dita-01" xml:lang="en-us">
+  <title>Applied Magic Workshop</title>
+  <shortdesc>Using DITA and automated doc builds in a CI workflow</shortdesc>
+  <conbody>
+    <p>Documentation as Code, Continuous Delivery (Write --> Build --> Test --> Publish), Collaborate with DevOps to leverage the automated infrastructure used for products</p>
+  </conbody>
+</concept>

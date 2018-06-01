@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--  This file is a sample for the Applied Magic - CI with DITA workshop, ETC 2018.  -->
+
+<task id="dita-ot-jenkins-artifactory" xml:lang="en-us">
+  <title>Pushing files to Artifactory</title>
+  <shortdesc>What we're going to do: You can reate a new Jenkins Job, or modify an existing one and configure it to push the build artifact to Artifactory.</shortdesc>
+    <taskbody>
+    <steps>
+      <step>
+        <cmd>On the Build Environment tab of the job, select Generic-Artifactory Integration.</cmd>
+      </step>
+	  <step>
+        <cmd>For Artifactory Upload Server, enter http://localhost:8081.</cmd>
+      </step>
+	  <step>
+        <cmd>Artifactory will need a description to recognize acceptable artifacta. Paste the following snippet in the Upload Spec Source - Spec field:</cmd>	
+		<info><pre>{
+  "files": [
+    {
+      "pattern": "out/*.pdf",
+      "target": "doc-local/pdf/",
+      "props": "type=pdf;status=ready"
+    }
+   ]
+}</pre></info>
+      </step>
+       <step>
+        <cmd>Remember to add the dita command and save the job configuration.</cmd>
+      </step>
+	  <step><cmd>Examine the Console log of the job for a link to the uploaded artifact.</cmd>
+	  </step>
+    </steps>
+  </taskbody>
+</task>
